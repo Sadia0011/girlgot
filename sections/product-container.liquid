@@ -1,0 +1,156 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .product-card {
+        text-align: center;
+        background: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-swiper {
+        width: 100%;
+        height: 250px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .product-swiper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .title {
+        color: #272727;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 10px 0;
+    }
+
+    .fa {
+        font-size: 18px;
+        margin: 2px;
+    }
+
+    .checked {
+        color: orange;
+    }
+
+    .price {
+        font-size: 18px;
+        font-weight: bold;
+        color: #272727;
+    }
+</style>
+
+<!-- Product Container -->
+<div class="product-container">
+    {% for block in section.blocks %}
+        <div class="product-card">
+            <!-- Swiper for Images -->
+            <div class="swiper product-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="{{ block.settings.first_image | img_url: 'medium' }}" alt="Product Image 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ block.settings.second_image | img_url: 'medium' }}" alt="Product Image 2">
+                    </div>
+                </div>
+                <!-- Pagination (dots) -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Product Info -->
+            <h3 class="title">{{ block.settings.title }}</h3>
+            <div>
+                {% for i in (1..block.settings.review) %}
+                    <span class="fa fa-star checked"></span>
+                {% endfor %}
+            </div>
+            <p class="price">${{ block.settings.price }}</p>
+        </div>
+    {% endfor %}
+</div>
+
+<!-- Swiper Initialization -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const productSwipers = document.querySelectorAll(".product-swiper");
+
+        productSwipers.forEach((swiperContainer, index) => {
+            new Swiper(swiperContainer, {
+                loop: true,
+                slidesPerView: 1,
+                pagination: {
+                    el: swiperContainer.querySelector(".swiper-pagination"),
+                    clickable: true,
+                },
+            });
+        });
+    });
+</script>
+
+{% schema %}
+{
+    "name": "Product Grid",
+    "blocks": [
+        {
+            "type": "product",
+            "name": "Product",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "first_image",
+                    "label": "First Image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "second_image",
+                    "label": "Second Image"
+                },
+                {
+                    "type": "inline_richtext",
+                    "id": "title",
+                    "label": "Product Name",
+                    "default": "Boss Babe"
+                },
+                {
+                    "type": "range",
+                    "id": "review",
+                    "label": "Review",
+                    "min": 1,
+                    "max": 5,
+                    "step": 1,
+                    "default": 5
+                },
+                {
+                    "type": "number",
+                    "id": "price",
+                    "label": "Price",
+                    "default": 37
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Product Grid",
+            "blocks": [
+                { "type": "product" }
+            ]
+        }
+    ]
+}
+{% endschema %}
