@@ -64,10 +64,78 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "highlights_collection_yEHqmC": {
+      "type": "highlights-collection",
+      "blocks": {
+        "category_WGFRbU": {
+          "type": "category",
+          "settings": {
+            "name": "DIY Lash Extensions",
+            "image": "shopify://shop_images/collection1.png"
+          }
+        },
+        "category_NWVWWm": {
+          "type": "category",
+          "settings": {
+            "name": "Cosmetics",
+            "image": "shopify://shop_images/collection2.png"
+          }
+        },
+        "category_EVRBzk": {
+          "type": "category",
+          "settings": {
+            "name": "Skincare",
+            "image": "shopify://shop_images/collection3.png"
+          }
+        },
+        "category_C6Fwin": {
+          "type": "category",
+          "settings": {
+            "name": "Mixed Boxen",
+            "image": "shopify://shop_images/collection4.png"
+          }
+        },
+        "category_VQdDca": {
+          "type": "category",
+          "settings": {
+            "name": "Mini Boxen",
+            "image": "shopify://shop_images/collection5.png"
+          }
+        },
+        "category_8DJFic": {
+          "type": "category",
+          "settings": {
+            "name": "Große Boxen",
+            "image": "shopify://shop_images/collection6.png"
+          }
+        },
+        "category_fwVGpW": {
+          "type": "category",
+          "settings": {
+            "name": "Mixed Boxen",
+            "image": "shopify://shop_images/collection7.png"
+          }
+        }
+      },
+      "block_order": [
+        "category_WGFRbU",
+        "category_NWVWWm",
+        "category_EVRBzk",
+        "category_C6Fwin",
+        "category_VQdDca",
+        "category_8DJFic",
+        "category_fwVGpW"
+      ],
+      "settings": {}
+    },
+    "lash_game_text_T7Dw6B": {
+      "type": "lash-game-text",
+      "settings": {}
+    },
     "video_HgCfdj": {
       "type": "video",
       "settings": {
-        "heading": "Video",
+        "heading": "",
         "heading_size": "h1",
         "enable_video_looping": true,
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -122,6 +190,8 @@
   },
   "order": [
     "slideshow_JcXpAe",
+    "highlights_collection_yEHqmC",
+    "lash_game_text_T7Dw6B",
     "video_HgCfdj",
     "image_banner_QwKQ6J"
   ]
