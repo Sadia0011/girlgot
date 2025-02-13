@@ -147,6 +147,102 @@
         "padding_bottom": 36
       }
     },
+    "product_container_GHx3GP": {
+      "type": "product-container",
+      "blocks": {
+        "product_VnbW4D": {
+          "type": "product",
+          "settings": {
+            "first_image": "shopify://shop_images/product1.png",
+            "second_image": "shopify://shop_images/product7.png",
+            "title": "Boss Babe",
+            "review": 5,
+            "price": 37
+          }
+        },
+        "product_F9RDTJ": {
+          "type": "product",
+          "settings": {
+            "first_image": "shopify://shop_images/product2.png",
+            "second_image": "shopify://shop_images/product7.png",
+            "title": "Eye Candy",
+            "review": 5,
+            "price": 37
+          }
+        },
+        "product_LnhChg": {
+          "type": "product",
+          "settings": {
+            "first_image": "shopify://shop_images/product3.png",
+            "second_image": "shopify://shop_images/product7.png",
+            "title": "Lash Lover",
+            "review": 5,
+            "price": 37
+          }
+        },
+        "product_Ddhiw7": {
+          "type": "product",
+          "settings": {
+            "first_image": "shopify://shop_images/product4.png",
+            "second_image": "shopify://shop_images/product7.png",
+            "title": "Flutter Fling",
+            "review": 5,
+            "price": 37
+          }
+        },
+        "product_jnWfkc": {
+          "type": "product",
+          "settings": {
+            "first_image": "shopify://shop_images/product5.png",
+            "second_image": "shopify://shop_images/product7.png",
+            "title": "Flirt Filter",
+            "review": 5,
+            "price": 37
+          }
+        },
+        "product_NzdCha": {
+          "type": "product",
+          "settings": {
+            "first_image": "shopify://shop_images/product6.png",
+            "second_image": "shopify://shop_images/product7.png",
+            "title": "R.I.P Mascara",
+            "review": 5,
+            "price": 37
+          }
+        },
+        "product_R7paBL": {
+          "type": "product",
+          "settings": {
+            "first_image": "shopify://shop_images/product7.png",
+            "second_image": "shopify://shop_images/product3.png",
+            "title": "BOND GIRL Wimpernkleber transparent",
+            "review": 5,
+            "price": 37
+          }
+        },
+        "product_G4ABUj": {
+          "type": "product",
+          "settings": {
+            "first_image": "shopify://shop_images/product8.png",
+            "second_image": "shopify://shop_images/product1.png",
+            "title": "BOND GIRL+ Wimpernkleber schwarz",
+            "review": 5,
+            "price": 37
+          }
+        }
+      },
+      "block_order": [
+        "product_VnbW4D",
+        "product_F9RDTJ",
+        "product_LnhChg",
+        "product_Ddhiw7",
+        "product_jnWfkc",
+        "product_NzdCha",
+        "product_R7paBL",
+        "product_G4ABUj"
+      ],
+      "settings": {}
+    },
     "image_banner_QwKQ6J": {
       "type": "image-banner",
       "blocks": {
@@ -193,6 +289,7 @@
     "highlights_collection_yEHqmC",
     "lash_game_text_T7Dw6B",
     "video_HgCfdj",
+    "product_container_GHx3GP",
     "image_banner_QwKQ6J"
   ]
 }
