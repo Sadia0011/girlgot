@@ -9,11 +9,15 @@
         gap: 32px;
         /* padding: 20px; */
         align-items: center;
-        justify-content: center;
+        justify-items: center;
+        max-width: 1300px;
+        margin: auto;
     }
 
     .product-card {
         text-align: center;
+        width: 300px;
+        height: auto;
     }
 
     .product-swiper {
@@ -27,10 +31,18 @@
         height: 100%;
         object-fit: cover;
     }
-
+    .product-information{
+        display: flex;
+        padding-top: 16px;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        align-self: stretch;
+    }
     .title {
         font-size: 16px;
         font-weight: 500;
+        margin: 0;
     }
 
     .fa {
@@ -45,6 +57,7 @@
         font-size: 18px;
         font-weight: bold;
         color: #272727;
+        margin: 0;
     }
     .swiper-pagination-bullet-active {
         background: #E97191;;
@@ -71,6 +84,56 @@
         max-width: 1440px;
         margin: 40px auto;
     }
+    @media (max-width: 1024px) {
+        .product-container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .product-swiper {
+            height: 350px;
+        }
+    }
+    @media (max-width: 768px) {
+        .product-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .product-swiper {
+            height: 300px;
+        }
+
+        .title, .price {
+            font-size: 14px;
+        }
+
+        .product-button {
+            padding: 12px 30px;
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .product-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .product-swiper {
+            height: 250px;
+        }
+
+        .title, .price {
+            font-size: 12px;
+        }
+
+        .fa {
+            font-size: 16px;
+        }
+
+        .product-button {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+    }
 </style>
 
 <!-- Product Container -->
@@ -92,13 +155,15 @@
             </div>
 
             <!-- Product Info -->
-            <h3 class="title">{{ block.settings.title }}</h3>
-            <div>
-                {% for i in (1..block.settings.review) %}
-                    <span class="fa fa-star checked"></span>
-                {% endfor %}
-            </div>
-            <p class="price">${{ block.settings.price }}</p>
+             <div class="product-information">
+                <h3 class="title">{{ block.settings.title }}</h3>
+                <div>
+                    {% for i in (1..block.settings.review) %}
+                        <span class="fa fa-star checked"></span>
+                    {% endfor %}
+                </div>
+                <p class="price">${{ block.settings.price }}</p>
+             </div>
         </div>
        
     {% endfor %}
