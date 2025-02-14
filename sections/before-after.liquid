@@ -1,6 +1,95 @@
+
 {{ 'before-after.css' | asset_url | stylesheet_tag }}
 {{ 'before-after.js' | asset_url | script_tag }}
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  .mini-card{
+    background-color: #F7F6F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 592px;
+    height: 218px;
+    padding: 24px;
+    max-width: 1440px;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+  .mini-card img{
+    width: 130px;
+    height: 170px;
+    object-fit: contain;
+  }
+  .mini-card-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .mini-card-title-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .mini-card-title{
+    color: #272727;
+    font-family: Satoshi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    margin: 0;
+  }
+  .mini-card-review{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #E97191;
+    font-size: 14px;
+    margin: 0;
+  }
+  .mini-card-review span{
+    color: #000;
+  }
+  .mini-card-price{
+    color: #2B2A2A;
+    text-align: right;
+    font-family: Satoshi;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+  }
+  .mini-card-information button{
+    color: #FFF;
+    background-color: #E97191;
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; 
+    display: flex;
+    width: 374px;
+    padding: 14px 40px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+  .fa {
+        font-size: 18px;
+        margin: 2px;
+    }
+
+    .checked {
+        color: #E97191;
+    }
+
+    .unchecked {
+        color: #ddd;
+    }
+</style>
 
 <div class="container">
   <div class="product-title">
@@ -32,6 +121,33 @@
     <img id="before-after-second" src="{{ section.settings.diy_second_image | img_url: 'master' }}" class="after">
 
     <input type="range" min="0" max="100" value="50" id="slider">
+  </div>
+
+
+
+  <div class="mini-card">
+    <div><img src="{{ section.settings.mini_card_image | img_url: 'medium' }}" alt=""></div>
+    <div class="mini-card-information">
+        <div>
+          <div class="mini-card-title-info">
+           <div>
+            <h2 class="mini-card-title">Lash Lover</h2>
+            {% comment %} <p class="mini-card-review">★★★★★ <span>(941)</span></p> {% endcomment %}
+            <div>
+              {% for i in (1..5) %}
+                  {% if i <= block.settings.review %}
+                      <span class="fa fa-star checked"></span>
+                  {% else %}
+                      <span class="fa fa-star unchecked"></span>
+                  {% endif %}
+              {% endfor %}
+          </div>
+           </div>
+            <p class="mini-card-price">€36,90</p>
+          </div>
+        </div>
+        <button>In den Warenkorb legen</button>
+    </div>
   </div>
 </div>
 
@@ -102,6 +218,15 @@
       "label": "Boss Babe Second Image"
     },
     {
+      "type": "range",
+      "id": "review",
+      "label": "Review",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 5
+    },
+    {
       "type": "image_picker",
       "id": "rip_first_image",
       "label": "RIP Mascara First Image"
@@ -120,6 +245,11 @@
       "type": "image_picker",
       "id": "lash_second_image",
       "label": "Lash Lover Second Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mini_card_image",
+      "label": "Mini Card Image"
     }
   ],
   "presets": [
@@ -130,3 +260,16 @@
   ]
 }
 {% endschema %}
+
+
+
+
+
+
+
+
+
+
+
+
+
