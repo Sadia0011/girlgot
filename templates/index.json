@@ -260,6 +260,77 @@
         "mini_card_image": "shopify://shop_images/product3.png"
       }
     },
+    "review_slider_xkeLWq": {
+      "type": "review-slider",
+      "blocks": {
+        "slider_6yXF7e": {
+          "type": "slider",
+          "settings": {
+            "video": "https://cdn.shopify.com/videos/c/o/v/bba51766f4d447388c47471c358abb00.mp4"
+          }
+        },
+        "slider_pQLKr4": {
+          "type": "slider",
+          "settings": {
+            "video": "https://cdn.shopify.com/videos/c/o/v/bba51766f4d447388c47471c358abb00.mp4"
+          }
+        },
+        "slider_dz9Req": {
+          "type": "slider",
+          "settings": {
+            "video": "https://cdn.shopify.com/videos/c/o/v/bba51766f4d447388c47471c358abb00.mp4"
+          }
+        },
+        "slider_fH8tzV": {
+          "type": "slider",
+          "settings": {
+            "video": "https://cdn.shopify.com/videos/c/o/v/bba51766f4d447388c47471c358abb00.mp4"
+          }
+        },
+        "slider_jTFCi3": {
+          "type": "slider",
+          "settings": {
+            "video": "https://cdn.shopify.com/videos/c/o/v/bba51766f4d447388c47471c358abb00.mp4"
+          }
+        },
+        "slider_Nce883": {
+          "type": "slider",
+          "settings": {
+            "video": "https://cdn.shopify.com/videos/c/o/v/bba51766f4d447388c47471c358abb00.mp4"
+          }
+        },
+        "slider_ypzXap": {
+          "type": "slider",
+          "settings": {
+            "video": "https://cdn.shopify.com/videos/c/o/v/bba51766f4d447388c47471c358abb00.mp4"
+          }
+        },
+        "slider_4n9UnP": {
+          "type": "slider",
+          "settings": {
+            "video": "https://cdn.shopify.com/videos/c/o/v/bba51766f4d447388c47471c358abb00.mp4"
+          }
+        },
+        "slider_YMheAP": {
+          "type": "slider",
+          "settings": {
+            "video": "https://cdn.shopify.com/videos/c/o/v/bba51766f4d447388c47471c358abb00.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "slider_6yXF7e",
+        "slider_pQLKr4",
+        "slider_dz9Req",
+        "slider_fH8tzV",
+        "slider_jTFCi3",
+        "slider_Nce883",
+        "slider_ypzXap",
+        "slider_4n9UnP",
+        "slider_YMheAP"
+      ],
+      "settings": {}
+    },
     "image_banner_QwKQ6J": {
       "type": "image-banner",
       "blocks": {
@@ -308,6 +379,7 @@
     "video_HgCfdj",
     "product_container_GHx3GP",
     "before_after_HJH3ad",
+    "review_slider_xkeLWq",
     "image_banner_QwKQ6J"
   ]
 }
