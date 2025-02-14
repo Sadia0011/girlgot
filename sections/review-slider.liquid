@@ -14,7 +14,7 @@
     font-size: 48px;
     font-style: normal;
     font-weight: 400;
-    line-height: 60px; /* 125% */
+    line-height: 60px; 
   }
   .swiper-wrapper {
     display: flex;
@@ -23,10 +23,11 @@
   }
   .swiper {
     width: 100%;
+    max-width: 100%;
     margin-top: 32px;
     overflow: hidden;
-    padding: 0 16px; 
-    box-sizing: border-box; 
+    padding: 0 16px;
+    box-sizing: border-box;
   }
   .swiper-slide video {
        width: 300px;
@@ -61,7 +62,7 @@
 <script>
 const swiper = new Swiper('.swiper', {
     loop: true,
-    slidesPerView: "auto"
+    slidesPerView: "auto",
     spaceBetween: 16,    
     pagination: {
         el: '.swiper-pagination',
