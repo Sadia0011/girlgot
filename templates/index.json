@@ -260,84 +260,6 @@
         "mini_card_image": "shopify://shop_images/product3.png"
       }
     },
-    "review_slider_eMCezw": {
-      "type": "review-slider",
-      "blocks": {
-        "slider_AjDXdL": {
-          "type": "slider",
-          "settings": {
-            "video": "https://cdn.shopify.com/videos/c/o/v/bba51766f4d447388c47471c358abb00.mp4"
-          }
-        },
-        "slider_eJqKtg": {
-          "type": "slider",
-          "settings": {
-            "video": "https://cdn.shopify.com/videos/c/o/v/bba51766f4d447388c47471c358abb00.mp4"
-          }
-        },
-        "slider_4wUrAH": {
-          "type": "slider",
-          "settings": {
-            "video": "https://cdn.shopify.com/videos/c/o/v/bba51766f4d447388c47471c358abb00.mp4"
-          }
-        },
-        "slider_3DgVWg": {
-          "type": "slider",
-          "settings": {
-            "video": "https://cdn.shopify.com/videos/c/o/v/bba51766f4d447388c47471c358abb00.mp4"
-          }
-        },
-        "slider_4jXqgB": {
-          "type": "slider",
-          "settings": {
-            "video": "https://cdn.shopify.com/videos/c/o/v/bba51766f4d447388c47471c358abb00.mp4"
-          }
-        },
-        "slider_QtYicx": {
-          "type": "slider",
-          "settings": {
-            "video": "https://cdn.shopify.com/videos/c/o/v/bba51766f4d447388c47471c358abb00.mp4"
-          }
-        },
-        "slider_WE8xQE": {
-          "type": "slider",
-          "settings": {
-            "video": "https://cdn.shopify.com/videos/c/o/v/bba51766f4d447388c47471c358abb00.mp4"
-          }
-        },
-        "slider_nf6zUV": {
-          "type": "slider",
-          "settings": {
-            "video": "https://cdn.shopify.com/videos/c/o/v/bba51766f4d447388c47471c358abb00.mp4"
-          }
-        },
-        "slider_Mj7bGT": {
-          "type": "slider",
-          "settings": {
-            "video": "https://cdn.shopify.com/videos/c/o/v/bba51766f4d447388c47471c358abb00.mp4"
-          }
-        },
-        "slider_YQhib8": {
-          "type": "slider",
-          "settings": {
-            "video": ""
-          }
-        }
-      },
-      "block_order": [
-        "slider_AjDXdL",
-        "slider_eJqKtg",
-        "slider_4wUrAH",
-        "slider_3DgVWg",
-        "slider_4jXqgB",
-        "slider_QtYicx",
-        "slider_WE8xQE",
-        "slider_nf6zUV",
-        "slider_Mj7bGT",
-        "slider_YQhib8"
-      ],
-      "settings": {}
-    },
     "image_banner_QwKQ6J": {
       "type": "image-banner",
       "blocks": {
@@ -386,7 +308,6 @@
     "video_HgCfdj",
     "product_container_GHx3GP",
     "before_after_HJH3ad",
-    "review_slider_eMCezw",
     "image_banner_QwKQ6J"
   ]
 }
