@@ -53,6 +53,9 @@
         "slide_9wWMBk",
         "slide_qzPx7A"
       ],
+      "custom_css": [
+        ".button{padding: 2rem 10rem;}"
+      ],
       "settings": {
         "layout": "full_bleed",
         "slide_height": "adapt_image",
