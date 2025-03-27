@@ -179,8 +179,8 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".product-swiper").forEach((swiperContainer) => {
-        new Swiper(swiperContainer, {
+    document.querySelectorAll(".product-swiper").forEach((swiperContainer, index) => {
+        new Swiper(`.swiper-${index + 1}`, {
             loop: true,
             slidesPerView: 1,
             pagination: {
@@ -190,7 +190,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
 </script>
 
 
