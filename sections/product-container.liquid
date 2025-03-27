@@ -144,7 +144,7 @@
     {% for block in section.blocks %}
         <div class="product-card">
            
-            <div class="swiper product-swiper">
+            <div class="swiper product-swiper swiper-{{ forloop.index }}">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="{{ block.settings.first_image | img_url: 'master' }}" alt="Product Image 1">
