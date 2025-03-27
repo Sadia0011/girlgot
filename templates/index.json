@@ -54,7 +54,7 @@
         "slide_qzPx7A"
       ],
       "custom_css": [
-        ".button{padding: 2rem 10rem;}"
+        ".button {padding: 2rem 10rem; font-size:18px;}"
       ],
       "settings": {
         "layout": "full_bleed",
