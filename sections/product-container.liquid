@@ -156,7 +156,7 @@
             </div>
 
             
-             <div class="product-information">
+            <div class="product-information">
                 <h3 class="title">{{ block.settings.title }}</h3>
                 <div>
                     {% for i in (1..block.settings.review) %}
@@ -164,7 +164,7 @@
                     {% endfor %}
                 </div>
                 <p class="price">${{ block.settings.price }}</p>
-             </div>
+            </div>
         </div>
        
     {% endfor %}
@@ -176,21 +176,21 @@
 
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const productSwipers = document.querySelectorAll(".product-swiper");
-
-        productSwipers.forEach((swiperContainer, index) => {
-            new Swiper(swiperContainer, {
-                loop: true,
-                slidesPerView: 1,
-                pagination: {
-                    el: swiperContainer.querySelector(".swiper-pagination"),
-                    clickable: true,
-                },
-            });
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".product-swiper").forEach((swiperContainer) => {
+        new Swiper(swiperContainer, {
+            loop: true,
+            slidesPerView: 1,
+            pagination: {
+                el: swiperContainer.querySelector(".swiper-pagination"),
+                clickable: true,
+            },
         });
     });
+});
+
 </script>
+
 
 {% schema %}
 {
