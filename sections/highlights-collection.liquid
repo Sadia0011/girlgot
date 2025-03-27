@@ -72,11 +72,14 @@
 <div class="collection-container">
     {% for block in section.blocks %}
         <div class="collection-item">
-            <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.name }}">
-            <p>{{ block.settings.name }}</p>
+            <a href="{{ block.settings.collection.url }}">
+                <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.name }}">
+                <p>{{ block.settings.name }}</p>
+            </a>
         </div>
     {% endfor %}
 </div>
+
 
 {% schema %}
 {
@@ -87,6 +90,11 @@
             "type": "category",
             "name": "Category",
             "settings": [
+                {
+                  "type": "collection",
+                  "id": "collection",
+                  "label": "collection"
+                },
                 {
                     "type": "text",
                     "id": "name",
