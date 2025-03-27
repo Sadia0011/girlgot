@@ -141,35 +141,32 @@
 
 
 <div class="product-container">
-    {% for block in section.blocks %}
-        <div class="product-card">
-           
-            <div class="swiper product-swiper swiper-{{ forloop.index }}">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="{{ block.settings.first_image | img_url: 'master' }}" alt="Product Image 1">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="{{ block.settings.second_image | img_url: 'master' }}" alt="Product Image 2">
-                    </div>
+   {% for block in section.blocks %}
+    <div class="product-card">
+        <div class="swiper product-swiper swiper-{{ forloop.index }}">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="{{ block.settings.first_image | img_url: 'master' }}" alt="Product Image 1">
                 </div>
-               
-                <div class="swiper-pagination"></div>
-            </div>
-
-            
-            <div class="product-information">
-                <h3 class="title">{{ block.settings.title }}</h3>
-                <div>
-                    {% for i in (1..block.settings.review) %}
-                        <span class="fa fa-star checked"></span>
-                    {% endfor %}
+                <div class="swiper-slide">
+                    <img src="{{ block.settings.second_image | img_url: 'master' }}" alt="Product Image 2">
                 </div>
-                <p class="price">${{ block.settings.price }}</p>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
-       
-    {% endfor %}
+
+        <div class="product-information">
+            <h3 class="title">{{ block.settings.title }}</h3>
+            <div>
+                {% for i in (1..block.settings.review) %}
+                    <span class="fa fa-star checked"></span>
+                {% endfor %}
+            </div>
+            <p class="price">${{ block.settings.price }}</p>
+        </div>
+    </div>
+{% endfor %}
+
    
 </div>
 <div class="button-cls">
