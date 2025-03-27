@@ -253,6 +253,13 @@
       ],
       "settings": {}
     },
+    "eyelashkit_product_nPrjJT": {
+      "type": "eyelashkitProduct",
+      "settings": {
+        "card-image": "shopify://shop_images/eyelashLit_d0ac5e10-febd-4e3b-92cd-58a0a77365e5.png",
+        "review": 5
+      }
+    },
     "before_after_HJH3ad": {
       "type": "before-after",
       "settings": {
@@ -341,6 +348,64 @@
       ],
       "settings": {}
     },
+    "blog_container_DMq67L": {
+      "type": "blog-container",
+      "blocks": {
+        "blog_brxJkc": {
+          "type": "Blog",
+          "settings": {
+            "image": "shopify://shop_images/blog1_2e012a45-0b84-4807-9ed5-50e296071479.jpg",
+            "range": 5,
+            "name": "Jessica K.",
+            "review_text": "Meine Freundin hat mir die Lashes empfohlen und Sie hat definitiv nicht übertrieben . Die Handhabung ist super einfach und ich habe noch nie so viele Komplimente für meine Wimpern bekommen . Ich liebe Sie . 2 weitere Freundinnen habe ich die Lashes bereits ans Herz gelegt . ♥️"
+          }
+        },
+        "blog_DFFWWT": {
+          "type": "Blog",
+          "settings": {
+            "image": "shopify://shop_images/blog2_86a3e9c8-5c38-4879-8064-08b0613541e1.png",
+            "range": 5,
+            "name": "Jessica K.",
+            "review_text": "Meine Freundin hat mir die Lashes empfohlen und Sie hat definitiv nicht übertrieben . Die Handhabung ist super einfach und ich habe noch nie so viele Komplimente für meine Wimpern bekommen . Ich liebe Sie . 2 weitere Freundinnen habe ich die Lashes bereits ans Herz gelegt . ♥️"
+          }
+        },
+        "blog_VVQhDU": {
+          "type": "Blog",
+          "settings": {
+            "image": "shopify://shop_images/blog3_35283212-cd4d-4eec-8d52-458233f11177.png",
+            "range": 5,
+            "name": "Jessica K.",
+            "review_text": "Meine Freundin hat mir die Lashes empfohlen und Sie hat definitiv nicht übertrieben . Die Handhabung ist super einfach und ich habe noch nie so viele Komplimente für meine Wimpern bekommen . Ich liebe Sie . 2 weitere Freundinnen habe ich die Lashes bereits ans Herz gelegt . ♥️"
+          }
+        },
+        "blog_iVRgkp": {
+          "type": "Blog",
+          "settings": {
+            "image": "shopify://shop_images/blog1_2e012a45-0b84-4807-9ed5-50e296071479.jpg",
+            "range": 5,
+            "name": "Jessica K.",
+            "review_text": "Meine Freundin hat mir die Lashes empfohlen und Sie hat definitiv nicht übertrieben . Die Handhabung ist super einfach und ich habe noch nie so viele Komplimente für meine Wimpern bekommen . Ich liebe Sie . 2 weitere Freundinnen habe ich die Lashes bereits ans Herz gelegt . ♥️"
+          }
+        },
+        "blog_AVKi44": {
+          "type": "Blog",
+          "settings": {
+            "image": "shopify://shop_images/blog2_86a3e9c8-5c38-4879-8064-08b0613541e1.png",
+            "range": 5,
+            "name": "Jessica K.",
+            "review_text": "Meine Freundin hat mir die Lashes empfohlen und Sie hat definitiv nicht übertrieben . Die Handhabung ist super einfach und ich habe noch nie so viele Komplimente für meine Wimpern bekommen . Ich liebe Sie . 2 weitere Freundinnen habe ich die Lashes bereits ans Herz gelegt . ♥️"
+          }
+        }
+      },
+      "block_order": [
+        "blog_brxJkc",
+        "blog_DFFWWT",
+        "blog_VVQhDU",
+        "blog_iVRgkp",
+        "blog_AVKi44"
+      ],
+      "settings": {}
+    },
     "image_banner_QwKQ6J": {
       "type": "image-banner",
       "blocks": {
@@ -389,8 +454,10 @@
     "lash_game_text_T7Dw6B",
     "video_HgCfdj",
     "product_container_GHx3GP",
+    "eyelashkit_product_nPrjJT",
     "before_after_HJH3ad",
     "review_slider_xkeLWq",
+    "blog_container_DMq67L",
     "image_banner_QwKQ6J"
   ]
 }
