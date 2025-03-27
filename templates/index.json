@@ -73,6 +73,7 @@
         "category_WGFRbU": {
           "type": "category",
           "settings": {
+            "collection": "cosmetics",
             "name": "DIY Lash Extensions",
             "image": "shopify://shop_images/collection1.png"
           }
@@ -80,6 +81,7 @@
         "category_NWVWWm": {
           "type": "category",
           "settings": {
+            "collection": "false-eyelashes",
             "name": "Cosmetics",
             "image": "shopify://shop_images/collection2.png"
           }
@@ -87,6 +89,7 @@
         "category_EVRBzk": {
           "type": "category",
           "settings": {
+            "collection": "cosmetics",
             "name": "Skincare",
             "image": "shopify://shop_images/collection3.png"
           }
@@ -94,6 +97,7 @@
         "category_C6Fwin": {
           "type": "category",
           "settings": {
+            "collection": "false-eyelashes",
             "name": "Mixed Boxen",
             "image": "shopify://shop_images/collection4.png"
           }
@@ -101,6 +105,7 @@
         "category_VQdDca": {
           "type": "category",
           "settings": {
+            "collection": "cosmetics",
             "name": "Mini Boxen",
             "image": "shopify://shop_images/collection5.png"
           }
@@ -108,6 +113,7 @@
         "category_8DJFic": {
           "type": "category",
           "settings": {
+            "collection": "false-eyelashes",
             "name": "Große Boxen",
             "image": "shopify://shop_images/collection6.png"
           }
@@ -115,6 +121,7 @@
         "category_fwVGpW": {
           "type": "category",
           "settings": {
+            "collection": "cosmetics",
             "name": "Mixed Boxen",
             "image": "shopify://shop_images/collection7.png"
           }
