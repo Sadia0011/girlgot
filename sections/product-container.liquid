@@ -141,8 +141,8 @@
 
 
 <div class="product-container">
-   {% for block in section.blocks %}
-    <div class="product-card">
+{% for block in section.blocks %}
+    <a href="{{ block.settings.product.url }}" class="product-card">
         <div class="swiper product-swiper swiper-{{ forloop.index }}">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -164,8 +164,9 @@
             </div>
             <p class="price">${{ block.settings.price }}</p>
         </div>
-    </div>
+    </a>
 {% endfor %}
+
 
    
 </div>
@@ -203,6 +204,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     "id": "first_image",
                     "label": "First Image"
                 },
+              {
+                "type": "product",
+                "id": "product",
+                "label": "Product"
+              },
                 {
                     "type": "image_picker",
                     "id": "second_image",
