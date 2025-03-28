@@ -164,6 +164,7 @@
           "type": "product",
           "settings": {
             "first_image": "shopify://shop_images/product1.png",
+            "product": "wimpernextensions-boss-babe",
             "second_image": "shopify://shop_images/product7.png",
             "title": "Boss Babe",
             "review": 5,
@@ -174,6 +175,7 @@
           "type": "product",
           "settings": {
             "first_image": "shopify://shop_images/product2.png",
+            "product": "eye-candy",
             "second_image": "shopify://shop_images/product7.png",
             "title": "Eye Candy",
             "review": 5,
@@ -184,6 +186,7 @@
           "type": "product",
           "settings": {
             "first_image": "shopify://shop_images/product3.png",
+            "product": "wimpernextensions-lash-lover",
             "second_image": "shopify://shop_images/product7.png",
             "title": "Lash Lover",
             "review": 5,
@@ -194,6 +197,7 @@
           "type": "product",
           "settings": {
             "first_image": "shopify://shop_images/product4.png",
+            "product": "wimpernextensions-flutter-fling",
             "second_image": "shopify://shop_images/product7.png",
             "title": "Flutter Fling",
             "review": 5,
@@ -204,6 +208,7 @@
           "type": "product",
           "settings": {
             "first_image": "shopify://shop_images/product5.png",
+            "product": "wimpernextensions-flirt-filter",
             "second_image": "shopify://shop_images/product7.png",
             "title": "Flirt Filter",
             "review": 5,
@@ -214,6 +219,7 @@
           "type": "product",
           "settings": {
             "first_image": "shopify://shop_images/product6.png",
+            "product": "wimpernextensions-r-i-p-mascara",
             "second_image": "shopify://shop_images/product7.png",
             "title": "R.I.P Mascara",
             "review": 5,
@@ -224,6 +230,7 @@
           "type": "product",
           "settings": {
             "first_image": "shopify://shop_images/product7.png",
+            "product": "bond-girl-wimpernkleber-schwarz",
             "second_image": "shopify://shop_images/product3.png",
             "title": "BOND GIRL Wimpernkleber transparent",
             "review": 5,
@@ -234,6 +241,7 @@
           "type": "product",
           "settings": {
             "first_image": "shopify://shop_images/product8.png",
+            "product": "bond-girl-wimpernkleber-schwarz",
             "second_image": "shopify://shop_images/product1.png",
             "title": "BOND GIRL+ Wimpernkleber schwarz",
             "review": 5,
