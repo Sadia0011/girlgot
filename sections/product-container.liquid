@@ -143,7 +143,7 @@
 <div class="product-container">
 {% for block in section.blocks %}
     <a href="{{ block.settings.product.url }}" class="product-card">
-        <div class="product-swiper  swiper-{{ forloop.index }}">
+        <div class="product-swiper swiper swiper-{{ forloop.index }}">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="{{ block.settings.first_image | img_url: 'master' }}" alt="Product Image 1">
