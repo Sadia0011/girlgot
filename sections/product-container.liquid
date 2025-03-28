@@ -157,7 +157,7 @@
 
             <div class="product-information">
                 <a href="{{ block.settings.product.url }}">
-                    <h3 class="title">{{ block.settings.title }}</h3>
+                    <h3 class="title">{{ block.settings.product.title }}</h3>
                 </a>
                 <div>
                     {% for i in (1..block.settings.review) %}
@@ -214,12 +214,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     "label": "Second Image"
                 },
                 {
-                    "type": "inline_richtext",
-                    "id": "title",
-                    "label": "Product Name",
-                    "default": "Boss Babe"
-                },
-                {
                     "type": "range",
                     "id": "review",
                     "label": "Review",
@@ -227,11 +221,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     "max": 5,
                     "step": 1,
                     "default": 5
-                },
-                {
-                    "type": "number",
-                    "id": "price",
-                    "label": "Price"
                 }
             ]
         }
