@@ -145,10 +145,10 @@
         <div class="product-card">
             <div class="swiper product-swiper swiper-{{ forloop.index }}">
                 <div class="product-wrapper">
-                    <div class="product-slide">
+                    <div class="swiper-slide">
                         <img src="{{ block.settings.first_image | img_url: 'master' }}" alt="Product Image 1">
                     </div>
-                    <div class="product-slide">
+                    <div class="swiper-slide">
                         <img src="{{ block.settings.second_image | img_url: 'master' }}" alt="Product Image 2">
                     </div>
                 </div>
@@ -185,8 +185,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 el: swiperContainer.querySelector(".swiper-pagination"),
                 clickable: true,
             },
-            wrapperClass: "product-wrapper", 
-            slideClass: "product-slide",
+            wrapperClass: "product-wrapper" 
+            // slideClass: "product-slide",
         });
     });
 });
